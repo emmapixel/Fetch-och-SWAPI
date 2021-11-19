@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#site-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+#card-container{
+    width: 60%;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background: aquamarine;
+}
+.card{
+    background-color: beige;
+}
+
+#modal-container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#movie-info-container{
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    padding: 20px;
+}
+
+#goBack{
+    background-color: yellow;
+    font-size: 30px;
+    position: fixed;
+    left:0px;
+    top: 0px;
+}
