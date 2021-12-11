@@ -10,7 +10,8 @@
     justify-content: center;
     align-items: center;
     background-image: url("../media/img/universe.jpeg");
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: black;
     transition: 5s;
 
@@ -34,13 +35,13 @@
         background-image: url("../media/img/universe.jpeg");
     }
     60%{
-        background-image: url("../media/img/universe2.jpeg");
+        background-image: url("../media/img/galaxy.jpeg");
     }
     80%{
-        background-image: url("../media/img/universe.jpeg");
+        background-image: url("../media/img/universe2.jpeg");
     }
     100%{
-        background-image: url("../media/img/universe2.jpeg");
+        background-image: url("../media/img/universe.jpeg");
     }
 }
 
@@ -79,16 +80,14 @@
 }
 
 .loader {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    z-index: 1;
     border: 18px solid #f3f3f3;
     border-radius: 50%;
     border-top: 18px solid yellow;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     -webkit-animation: spin 2s linear infinite;
 }
 
@@ -107,19 +106,42 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
 }
 
 #movie-info-container{
-    width: 60%;
-    height: 60%;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    background-image: url("../media/img/planet.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 20px;
 }
 
+#movieTitle {
+    height: 20%;
+}
+
+#characterList {
+    width: 30%;
+    height: 80%;
+    overflow: auto;
+}
+
 #goBack{
-    background-color: yellow;
-    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-image: url("../media/img/spaceship.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 50px;
     position: fixed;
     left:0px;
     top: 0px;
